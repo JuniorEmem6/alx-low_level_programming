@@ -1,28 +1,18 @@
-#include <stdio.h>
-
-/**
- * add - prints the addition of two number
- * member - num
- * member - num2
- * Return: Always 0.
+/*
+ * File: 10-add.c
+ * Auth: Brennan D Baraban
  */
 
-int add(int num, int num2)
-{
-	return (num + num2);
-}
+#include "holberton.h"
 
 /**
- * main - add
+ * add - Adds two integers.
+ * @num1: The first integer to be added.
+ * @num2: The second integer to be added.
  *
- * Return: Always 0.
+ * Return: The result of the addition.
  */
-int main(void)
+int add(int num1, int num2)
 {
-	int n;
-
-	n = add(12, 17);
-	printf("%d\n", n);
-
-	return (0);
+	return (num1 + num2);
 }
