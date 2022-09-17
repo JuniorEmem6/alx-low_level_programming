@@ -1,18 +1,27 @@
-#include "../main.h"
+
+#include <stdlib.h>
+#include <time.h>
 #include <stdio.h>
 
 /**
- * main - check the code for Holberton School students.
+ * main - Prints a random number and states whether
+ *        it is positive, negative, or zero.
  *
  * Return: Always 0.
- */
+*/
 int main(void)
 {
-	char c;
+	int n;
 
-	c = 'A';
-	printf("%c: %d\n", c, _isupper(c));
-	c = 'a';
-	printf("%c: %d\n", c, _isupper(c));
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+
+	if (n > 0)
+		printf("%d is positive\n", n);
+	else if (n < 0)
+		printf("%d is negative\n", n);
+	else
+		printf("%d is zero\n", n);
+
 	return (0);
 }
