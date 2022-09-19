@@ -24,3 +24,4 @@ void puts_half(char *str)
 		printf("%c", str[index]);
 
 	printf("\n");
+}
