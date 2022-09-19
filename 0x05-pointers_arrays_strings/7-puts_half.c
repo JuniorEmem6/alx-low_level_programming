@@ -8,7 +8,7 @@
  */
 
 void puts_half(char *str)
-{
+{i
 	int index = 0, len = 0, n;
 
 	while (str[index++])
@@ -21,6 +21,6 @@ void puts_half(char *str)
 		n = (len + 1) / 2;
 
 	for (index = n; index < len; index++)
-		printf(str[index]);
+		printf('%c', str[index]);
 
-	printf('\n');
+	printf("\n");
